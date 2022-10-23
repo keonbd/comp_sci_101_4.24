@@ -1,0 +1,13 @@
+# Define your function here.
+def max_magnitude(user_val1, user_val2, user_val3):
+    max = user_val1
+    if abs(user_val1) > abs(user_val2) and abs(user_val1) > abs(user_val3):
+        max = user_val1
+    elif abs(user_val2) > abs(user_val3) and abs(user_val2) > abs(user_val1):
+        max = user_val2
+    elif abs(user_val3) > abs(user_val1) and abs(user_val3) > abs(user_val2):
+        max = user_val3
+    return max
+if __name__ == '__main__':
+    # Type your code here.
+    print(max_magnitude(int(input()), int(input()), int(input())))
